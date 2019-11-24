@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Righteous&display=swap');
+/* CORE STYLES */
+:root {
+	--primary-color: #e5e5e5;
+	--overlay-color: rgba(24, 39, 51 , 0.85);
+	--menu-speed: 0.75s;
+  }
+  
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.4;
+  }
+a{
+	text-decoration: none;
+}
+  .container {
+	max-width: 90%;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 3rem;
+  }
+  
+  .showcase {
+	/* background: var(--primary-color); */
+	background: #e5e5e5;
+	/* color: #fff; */
+	color: rgb(17, 16, 16);
+	height: 100vh;
+	position: relative;
+  }
+  
+  .showcase:before {
+	content: '';
+	background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+  }
+  
+  .showcase .showcase-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+	width: 70%;
+  }
+  
+  .showcase h1 {
+	font-family: 'Righteous', cursive;
+	font-size: 4rem;
+  }
+  
+  .showcase p {
+	font-size: 1.3rem;
+  }
+  
+  .btn {
+	display: inline-block;
+	border: none;
+	/* background: var(--primary-color); */
+	background: #23374d;
+	color: #fff;
+	padding: 0.75rem 1.5rem;
+	margin-top: 1rem;
+	transition: opacity 1s ease-in-out;
+	text-decoration: none;
+  }
+  
+  .btn:hover {
+	opacity: 0.7;
+  }
+  /* SAMPLE WORKS SECTION */
+  #sampleworks>.container{
+	padding-bottom: 5rem;
+  }
+
+  #sampleworks>.container>h1{
+	  text-align: center;
+	  font-size: 3rem;
+	  padding: 20px;
+  }
+
+  .boxes{
+	  display: grid;
+	  grid-template-columns: repeat(2,auto);
+	  text-align: center;
+	  grid-gap: 3rem;
+	  justify-content: center;
+  }
+  .box{
+	  width: 400px;
+	  height: 300px;
+	  border-radius: 5px;
+	  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
+	  transition: 0.3s;
+
+  }
+/* #box1{
+    margin: auto;
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+#box2{
+    margin:auto;
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+#box3{
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+#box4{
+    margin: auto;
+    border-top: 4px solid hsl(212, 86%, 64%);
+} */
+
+.box>a>img{
+	width: 400px;
+	height: 250px;
+	border-radius: 5px 5px 0 0;
+
+}
+.box>a>img:hover{
+	opacity: 0.7;
+}
+.box>h3{
+	padding: 5px;
+}
+
+/* Services Section */
+#services{
+	padding-top: 20px;
+	text-align: center;
+	/* background: #76dbd1; */
+	background: #e5e5e5;
+	color: rgb(58, 46, 46);
+}
+#services>.container>h1{
+	font-size: 3rem;
+	width: 50%;
+	margin: 0 auto;
+	color: black;
+
+}
+.serviceslist{
+	list-style: none;
+	text-align: center;
+	margin: 20px auto;
+	font-family: 'Righteous', cursive;
+	font-size: 1rem;
+}
+.serviceslist>li{
+	padding: 1rem;
+	width: 50%;
+	margin: 0 auto;
+}
+.serviceslist>li>h1{
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+.serviceslist>li>h1>a{
+	color: #000000;
+}
+li>img{
+	width: 100px;
+}
+/* Contact Us */
+#contact{
+	padding: 20px;
+	text-align: center;
+	display: inline;
+}
+#contact>h1{
+	font-size: 3rem;
+	padding-bottom: 20px;
+}
+.contact-img>img{
+	width: 100px;
+	margin-top: 50px;
+}
+.contact-img{
+	background: #23374d;
+	border-radius: 5px;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	float: left;
+	margin: auto 2.5% 0 20%;
+}
+.contact-text{
+	width: 30%;
+	float: right;
+	padding-top: 30px;
+	margin: auto 20% 0 2.5% ;
+	text-align: left;
+}
+.contact-text>h1{
+	width: 40%;
+	padding: 50px;
+	font-size: 2rem;
+}
+/* Footer */
+footer{
+	margin-top: 35vh;
+	text-align: center;
+	padding:20px;
+	background: #23374d;
+	color: #fff;
+}
+footer>a{
+	text-decoration: none;
+	color: #fff;
+}
+  /* MENU STYLES */
+  .menu-wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+  }
+  
+  .menu-wrap .toggler {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	opacity: 0;
+  }
+  
+  .menu-wrap .hamburger {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 60px;
+	height: 60px;
+	padding: 1rem;
+	background: var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  /* Hamburger Line */
+  .menu-wrap .hamburger > div {
+	position: relative;
+	flex: none;
+	width: 100%;
+	height: 2px;
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s ease;
+  }
+  
+  /* Hamburger Lines - Top & Bottom */
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: -10px;
+	width: 100%;
+	height: 2px;
+	background: inherit;
+  }
+  
+  /* Moves Line Down */
+  .menu-wrap .hamburger > div::after {
+	top: 10px;
+  }
+  
+  /* Toggler Animation */
+  .menu-wrap .toggler:checked + .hamburger > div {
+	transform: rotate(135deg);
+  }
+  
+  /* Turns Lines Into X */
+  .menu-wrap .toggler:checked + .hamburger > div:before,
+  .menu-wrap .toggler:checked + .hamburger > div:after {
+	top: 0;
+	transform: rotate(90deg);
+  }
+  
+  /* Rotate On Hover When Checked */
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+	transform: rotate(225deg);
+  }
+  
+  /* Show Menu */
+  .menu-wrap .toggler:checked ~ .menu {
+	visibility: visible;
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu > div {
+	transform: scale(1);
+	transition-duration: var(--menu-speed);
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu > div > div {
+	opacity: 1;
+	transition:  opacity 0.4s ease 0.4s;
+  }
+  
+  .menu-wrap .menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .menu-wrap .menu > div {
+	background: var(--overlay-color);
+	border-radius: 50%;
+	width: 200vw;
+	height: 200vw;
+	display: flex;
+	flex: none;
+	align-items: center;
+	justify-content: center;
+	transform: scale(0);
+	transition: all 0.4s ease;
+  }
+  
+  .menu-wrap .menu > div > div {
+	text-align: center;
+	max-width: 90vw;
+	max-height: 100vh;
+	opacity: 0;
+	transition: opacity 0.4s ease;
+  }
+  
+  .menu-wrap .menu > div > div > ul > li {
+	list-style: none;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 1rem;
+  }
+  
+  .menu-wrap .menu > div > div > ul > li > a {
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.4s ease;
+  }
+  
+  

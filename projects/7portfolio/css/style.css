@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+.top-container{
+    background: #01024e;
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+.foreground{
+    position: absolute;
+    width: 100%;
+    
+}
+h1{
+    text-align: center;
+    color:#ff6464;
+    font-size: 5em;
+    margin-top: 28vh;
+    margin-bottom: 5px;
+    font-family: 'Sacramento', cursive;
+}
+.sub-head{
+    color:#ff6464;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+h2,h3{
+    font-family: 'Montserrat', sans-serif;
+}
+hr{
+    border: dotted #ffffff;
+    border-bottom: none;
+    width: 4%;
+    margin: 10px auto;
+}
+.cloud-top{
+    width: 22vw;
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+}
+.cloud-bottom{
+    width: 20vw;
+    position: absolute;
+    bottom: 5vh;
+    right: 20px;
+
+}
+
+.mountain>img{
+    height: 768px;
+    width: 1368px;
+    position: absolute;
+    left: 0;
+    top: 42px;
+}
+.middle-container{
+    background: #58508d;
+    color: white;
+}
+.middle-container> .profile>img{
+    position: relative;
+    height: 100px;
+    margin: 50px  auto 10px;
+}
+.profile{
+    width: 30%;
+    margin:0 auto 40px;
+    
+}
+.skills{
+    background: #cbdedf;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+}
+.skill-row{
+    width: 40%;
+    margin: 60px auto;
+}
+.skill-row> img{
+    width: 100px;
+}
+.skl1>img{
+    float: left;
+    margin-right: 10px;
+}
+.skl1{
+    text-align:left ;
+}
+.skl2>img{
+    float: right;
+    margin-left: 10px;
+}
+.skl2{
+    text-align:right;
+}
+.contact-me{
+    width: 40%;
+    margin: 50px auto 0;
+    padding-bottom: 40px;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+.contact-me>p{
+    padding-bottom: 40px;
+}
+.btn{
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    background: #ff6361;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn:hover{
+    background: #bc5090;
+}
+
+.bottom-container{
+    background: #396362;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+.bottom-container> a{
+    margin: auto 20px;
+}
